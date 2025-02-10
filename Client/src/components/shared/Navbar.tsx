@@ -3,6 +3,7 @@ import Link from "next/link";
 import logo from '../../../public/logo.png'
 import Image from "next/image";
 import { usePathname } from "next/navigation";
+import HoverLink from "./HoverLink";
 const Navbar = () => {
   const pathname = usePathname();
   console.log(pathname);
@@ -61,7 +62,7 @@ const Navbar = () => {
       </div>
 
       <div className="flex items-center">
-        
+        <HoverLink label="Contact Us" link="/contact"/>
       </div>
     </div>
   );
