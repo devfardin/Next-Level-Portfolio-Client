@@ -50,8 +50,8 @@ const Navbar = () => {
           {
             menuItems?.map((item, index) => <li key={index} className="hover:text-gray-600">
               <Link className={`${pathname === item.link
-                ? "text-primery font-medium text-lg"
-                : "text-gray-700 hover:text-primery text-lg"
+                ? "text-primery font-medium text-xl"
+                : "text-gray-700 hover:text-primery text-xl"
                 }`}
                 href={`${item.link}`}> {item.label} </Link>
             </li>)
@@ -60,7 +60,10 @@ const Navbar = () => {
       </div>
 
       <div className="flex items-center">
+        <div className="hidden lg:block">
         <HoverLink label="Contact Us" link="/contact"/>
+        </div>
+
         <MobileMenu/>
       </div>
     </div>

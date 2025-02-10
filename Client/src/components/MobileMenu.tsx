@@ -7,7 +7,6 @@ import { GoArrowUpRight } from "react-icons/go";
 import { TbMenu2 } from "react-icons/tb";
 import { RxCross1 } from "react-icons/rx";
 import Image from "next/image";
-import HoverLink from "./shared/HoverLink";
 
 const MobileMenu = () => {
     const pathname = usePathname();
@@ -45,7 +44,7 @@ const MobileMenu = () => {
 
 
     return (
-        <div className="relative">
+        <div className="lg:hidden relative">
             <button
                 id="menu-trigger"
                 onClick={toggleMenu}
@@ -66,7 +65,7 @@ const MobileMenu = () => {
                 id="mobile-menu"
                 role="navigation"
                 aria-label="Mobile navigation menu"
-                className={`fixed top-0 right-0 w-[400px] h-full bg-black dark:bg-gray-800 shadow-lg transform transition-transform duration-300 ease-in-out ${isOpen ? "translate-x-0" : "translate-x-full"
+                className={`fixed top-0 right-0 w-[300px] sm:w-[400px] h-full bg-black dark:bg-gray-800 shadow-lg transform transition-transform duration-300 ease-in-out ${isOpen ? "translate-x-0" : "translate-x-full"
                     }`}
             >
                 <div className="h-full overflow-y-auto">
