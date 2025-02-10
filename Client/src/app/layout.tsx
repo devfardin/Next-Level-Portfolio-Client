@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "@/components/shared/Navbar";
+import Footer from "@/components/shared/Footer";
 
 export const metadata: Metadata = {
   title: 'Fardin Ahmed | Web Developer & Digital Creator',
@@ -17,6 +18,7 @@ export default async function RootLayout({
       <body suppressHydrationWarning>
         <Navbar />
         <div className="min-h-screen w-[90%] mx-auto">{children}</div>
+        <Footer/>
       </body>
     </html>
   );
