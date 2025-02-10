@@ -4,37 +4,35 @@ import logo from '../../../public/logo.png'
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import HoverLink from "./HoverLink";
+import MobileMenu from "../MobileMenu";
+export const menuItems = [
+  {
+    label: 'Home',
+    link: '/',
+  },
+  {
+    label: 'About',
+    link: '/about',
+  },
+  {
+    label: 'Services',
+    link: '/services',
+  },
+  {
+    label: 'Resumi',
+    link: '/resumi',
+  },
+  {
+    label: 'Portfolio',
+    link: '/portfolio',
+  },
+  {
+    label: 'Blog',
+    link: '/blog',
+  },
+];
 const Navbar = () => {
   const pathname = usePathname();
-  console.log(pathname);
-
-  const menuItems = [
-    {
-      label: 'Home',
-      link: '/',
-    },
-    {
-      label: 'About',
-      link: '/about',
-    },
-    {
-      label: 'Services',
-      link: '/services',
-    },
-    {
-      label: 'Resumi',
-      link: '/resumi',
-    },
-    {
-      label: 'Portfolio',
-      link: '/portfolio',
-    },
-    {
-      label: 'Blog',
-      link: '/blog',
-    },
-  ];
-
   return (
     <div className="container mx-auto flex items-center justify-between
     bg-white border-b py-4">
@@ -63,6 +61,7 @@ const Navbar = () => {
 
       <div className="flex items-center">
         <HoverLink label="Contact Us" link="/contact"/>
+        <MobileMenu/>
       </div>
     </div>
   );
