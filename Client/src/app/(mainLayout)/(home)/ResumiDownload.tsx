@@ -1,5 +1,4 @@
-import React from 'react'
-
+import toast from "react-hot-toast";
 const handleDownloadResume = async () => {
     const fileId = '1Fekp-4mxRRjgPCQfn7SZ4h51O1gInYx8';
     const apiKey = 'AIzaSyA6dpei6CSH8JlDRSKmQMPJSjzBbrAT0IU';
@@ -14,8 +13,6 @@ const handleDownloadResume = async () => {
         }
       })
       const result = await  response.blob();
-      console.log(result);
-      
       const link = document.createElement('a');
       link.href = window.URL.createObjectURL(result);
       link.download = 'Md.Fardin Ahmed.pdf';
@@ -23,8 +20,7 @@ const handleDownloadResume = async () => {
       link.click();
       document.body.removeChild(link);
     } catch (error) {
-      console.error('Error downloading resume:', error);
-    //   toast.error('Failed to download resume. Please try again later.')
+      toast.error(`Failed to download resume. Please try again later. ${error}`)
     }
   };
 const ResumiDownload = () => {
@@ -38,6 +34,4 @@ const ResumiDownload = () => {
     </button>
   )
 }
-
-
 export default ResumiDownload

@@ -1,3 +1,4 @@
+import { Toaster } from "react-hot-toast";
 import "./globals.css";
 
 export default async function RootLayout({
@@ -10,6 +11,7 @@ export default async function RootLayout({
       <body suppressHydrationWarning>
         {children}
       </body>
+      <Toaster  position="top-right"/>
     </html>
   );
 }
