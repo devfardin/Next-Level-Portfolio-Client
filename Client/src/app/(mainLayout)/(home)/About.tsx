@@ -10,7 +10,7 @@ import ResumiDownload from './ResumiDownload'
 import AboutMe from '@/../../public/images/aboutMe.webp'
 const About = () => {
     return (
-        <div className='my-20'>
+        <div className='my-24'>
             <Container>
                 <div className='flex flex-col lg:flex-row gap-10'>
                     <div className='flex-1'>
@@ -19,7 +19,7 @@ const About = () => {
                     </div>
                     <div className='flex-1 flex flex-col gap-4'>
                         <div>
-                            <SubTitle label='About Us' />
+                            <SubTitle label='About Me' />
                             <Title label='I Can Design Anything You Want' />
                         </div>
                         <p className='text-lg text-secondary font-normal'>{`I bring your ideas to life with creative, modern, and user-friendly designs. Whether it's a stunning website, an engaging eCommerce platform, or a fully customized solution, I ensure high-quality, pixel-perfect designs that match your vision. Let’s create something extraordinary together! 🚀`}</p>
