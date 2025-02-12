@@ -1,0 +1,45 @@
+
+[
+    {
+    "title": "Website Development",
+    "description": "Building fast, modern, and fully responsive websites tailored to your business needs.",
+    "image": "https://credesign.vercel.app/multiPage/img/serviceEight.png"
+    },
+    {
+    "title": "WordPress eCommerce Solutions",
+    "description": "Creating high-converting online stores using WordPress & WooCommerce.",
+    "image": "https://credesign.vercel.app/multiPage/img/serviceSeven.png"
+    },
+    {
+    "title": "Website Design & UI Customization",
+    "description": "Designing stunning, pixel-perfect user interfaces for an engaging user experience.",
+    "image": "https://credesign.vercel.app/multiPage/img/serviceFour.png"
+    },
+    {
+    "title": "Speed Optimization & Performance Tuning",
+    "description": "Optimizing websites for lightning-fast performance and better SEO rankings.",
+    "image": "https://credesign.vercel.app/multiPage/img/serviceThree.png"
+    },
+    {
+    "title": "Custom WordPress Plugin & Theme Development",
+    "description": "Developing custom WordPress themes and plugins to enhance functionality and design.",
+    "image": "https://credesign.vercel.app/multiPage/img/serviceTwo.png"
+    },
+    {
+    "title": "SEO & Digital Marketing Solutions",
+    "description": "Boosting website visibility with SEO optimization and digital marketing strategies.",
+    "image": "https://credesign.vercel.app/multiPage/img/serviceFive.png"
+    },
+    {
+    "title": "Website Maintenance & Support",
+    "description": "Providing ongoing support, security updates, and troubleshooting for smooth performance.",
+    "image": "https://credesign.vercel.app/multiPage/img/serviceOne.png"
+    },
+    {
+        "title": "WordPress Elementor Website",
+        "description": "Designing and developing stunning WordPress websites using Elementor with full customization.",
+        "image": "https://credesign.vercel.app/multiPage/img/serviceSix.png"
+    }
+]
+
+  
