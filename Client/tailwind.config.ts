@@ -8,6 +8,24 @@ export default {
   ],
   theme: {
     extend: {
+      keyframes: {
+        BgMove3D: {
+          '0%': { transform: 'translate3d(0px, 0px, 0px)' },
+          "50%": { transform: "translate3d(-30px, -30px, -30px)" },
+          "100%": { transform: "translate3d(0px, 0px, 0px)" },
+        }
+      },
+      animation: {
+        'bg-move-3d': 'BgMove3D 2s infinite',
+      },
+      container: {
+        screens: {
+          sm: "100%", 
+          md: "100%", 
+          lg: "1024px", 
+          xl: "1280px",
+        },
+      },
       colors: {
         primery: "#FF8000",
         secondary: "#606060",

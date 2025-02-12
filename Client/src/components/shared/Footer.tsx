@@ -7,6 +7,7 @@ import { TbBrandFiverr } from 'react-icons/tb'
 import { RiLinkedinFill } from 'react-icons/ri'
 import { AiOutlineGithub } from 'react-icons/ai'
 import { PiMapPinFill } from 'react-icons/pi'
+import Container from './Container'
 const Footer = () => {
   const exporeLink = [
     {
@@ -27,9 +28,9 @@ const Footer = () => {
     },
   ]
   return (
-    <div className='bg-black'>
-      <div className='container mx-auto py-10 lg:py-20'>
-        <div className='grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-6 gap-10 lg:gap-32 justify-between px-10'>
+    <div className='bg-black py-10 lg:py-20'>
+      <Container>
+      <div className='grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-6 gap-10 lg:gap-32 justify-between'>
           {/* First items */}
           <div className='flex flex-col gap-5 sm:col-span-6 xl:col-span-2'>
             <Image alt="Fardin's Logo" src={logo} width={300} height={200} />
@@ -84,6 +85,9 @@ const Footer = () => {
             </div>
           </div>
         </div>
+      </Container>
+      <div className='container mx-auto '>
+        
       </div>
     </div>
   )
