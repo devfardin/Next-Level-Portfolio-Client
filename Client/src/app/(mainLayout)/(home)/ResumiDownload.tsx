@@ -1,3 +1,4 @@
+'use client'
 import toast from "react-hot-toast";
 const handleDownloadResume = async () => {
     const fileId = '1Fekp-4mxRRjgPCQfn7SZ4h51O1gInYx8';

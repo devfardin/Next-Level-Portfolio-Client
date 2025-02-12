@@ -8,6 +8,7 @@ import { RiLinkedinFill } from 'react-icons/ri'
 import { AiOutlineGithub } from 'react-icons/ai'
 import { PiMapPinFill } from 'react-icons/pi'
 import Container from './Container'
+import { FaWhatsapp } from 'react-icons/fa'
 const Footer = () => {
   const exporeLink = [
     {
@@ -64,6 +65,7 @@ const Footer = () => {
             <div className='mt-4 xl:mt-14'>
               <div className='flex gap-3 items-center mb-7'>
                 <a href='https://www.facebook.com/devfardin' target='_blank' className='text-white hover:text-primery bg-primery hover:bg-white duration-300 transition-colors p-1.5 rounded-md border-r-[3px] border-t-[3px] border-transparent hover:!border-primery'><BiLogoFacebook size={28} /></a>
+                <a href='https://wa.me/8801316049157' target='_blank' className='text-white hover:text-primery bg-primery hover:bg-white duration-300 transition-colors p-1.5 rounded-md border-r-[3px] border-t-[3px] border-transparent hover:!border-primery'><FaWhatsapp size={28} /></a>
                 <a href='https://www.linkedin.com/in/fardinahmed2020' target='_blank' className='text-white hover:text-primery bg-primery hover:bg-white duration-300 transition-colors p-1.5 rounded-md border-r-[3px] border-t-[3px] border-transparent hover:!border-primery'><RiLinkedinFill size={26} /></a>
                 <a href='https://github.com/devfardin' target='_blank' className='text-white hover:text-primery bg-primery hover:bg-white duration-300 transition-colors p-1.5 rounded-md border-r-[3px] border-t-[3px] border-transparent hover:!border-primery'><AiOutlineGithub size={26} /></a>
                 <a href='https://www.fiverr.com/fardin_ahmed_1' target='_blank' className='text-white hover:text-primery bg-primery hover:bg-white duration-300 transition-colors p-1.5 rounded-md border-r-[3px] border-t-[3px] border-transparent hover:!border-primery'><TbBrandFiverr size={26} /></a>

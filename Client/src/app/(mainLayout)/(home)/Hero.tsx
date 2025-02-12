@@ -10,7 +10,7 @@ const HomePageHero = () => {
     return (
         <div className='bg-background'>
             <Container>
-                <div className='flex flex-col-reverse lg:flex-row items-end lg:items-center justify-between pt-10 md:pt-16 gap-16'>
+                <div className='flex flex-col-reverse lg:flex-row items-end lg:items-center justify-between py-10  md:pt-16 gap-16'>
                     <div className='flex-1 pb-0 sm:pb-6'>
                         <div className='flex gap-3 items-center'>
                             <Image alt="Who's me" src={orangeDot} width={20} height={50} />
