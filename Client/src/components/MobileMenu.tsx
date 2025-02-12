@@ -49,7 +49,7 @@ const MobileMenu = () => {
                 id="menu-trigger"
                 onClick={toggleMenu}
                 className="bg-primery rounded-md text-white hover:text-white hover:bg-black 
-          py-3 px-6 text-xl duration-300 transition-all"
+          py-1.5 px-4 text-xl duration-300 transition-all"
                 aria-label="Toggle menu"
                 aria-expanded={isOpen}>
                 {isOpen ? <RxCross1 size={30} /> : <TbMenu2 size={30} />}
@@ -65,7 +65,7 @@ const MobileMenu = () => {
                 id="mobile-menu"
                 role="navigation"
                 aria-label="Mobile navigation menu"
-                className={`fixed top-0 right-0 w-[300px] sm:w-[400px] h-full bg-black dark:bg-gray-800 shadow-lg transform transition-transform duration-300 ease-in-out ${isOpen ? "translate-x-0" : "translate-x-full"
+                className={`fixed top-0 right-0 w-[300px] z-20 sm:w-[400px] h-full bg-black dark:bg-gray-800 shadow-lg transform transition-transform duration-300 ease-in-out ${isOpen ? "translate-x-0" : "translate-x-full"
                     }`}
             >
                 <div className="h-full overflow-y-auto">
@@ -78,7 +78,7 @@ const MobileMenu = () => {
                             <button
                                 id="menu-trigger"
                                 onClick={closeMenu}
-                                className="bg-primery rounded-md text-white hover:bg-white hover:text-primery py-3 px-6 text-xl duration-300 transition-all"
+                                className="bg-primery rounded-md text-white hover:bg-white hover:text-primery py-2 px-4 text-xl duration-300 transition-all"
                                 aria-label="Toggle menu"
                                 aria-expanded={isOpen}>
                                 <RxCross1 size={30} />

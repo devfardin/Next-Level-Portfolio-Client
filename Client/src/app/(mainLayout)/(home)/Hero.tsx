@@ -17,7 +17,7 @@ const HomePageHero = () => {
                             <span className=' text-base font-normal text-black_secondary'>I am Mearn-stack Web Developer</span>
                         </div>
                         <div className='flex flex-col gap-4 mt-3'>
-                            <h1 className='text-4xl sm:text-5xl md:text-4xl xl:text-[75px] font-semibold leading-[1.2em] md:leading-[1.1em] inline'> Creative Design  & Web Development <TypeAnimation
+                            <h1 className='text-4xl sm:text-5xl md:text-5xl xl:text-[75px] font-semibold leading-[1.2em] md:leading-[1.1em] inline'> Creative Design  & Web Development <TypeAnimation
                                 sequence={[
                                     'Services',
                                     1000,
