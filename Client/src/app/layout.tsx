@@ -10,8 +10,8 @@ export default async function RootLayout({
     <html lang="en" data-theme="light">
       <body suppressHydrationWarning>
         {children}
+        <Toaster position="top-right" />
       </body>
-      <Toaster  position="top-right"/>
     </html>
   );
 }

@@ -7,22 +7,27 @@ import ResumiDownload from './ResumiDownload'
 const HomePageHero = () => {
     return (
         <div className='bg-background'>
-            <div className='container mx-auto'>
-                <div className='grid grid-cols-1 md:grid-cols-4 items-center justify-between pt-16'>
-                    <div className='col-span-2'>
+            <div className='container mx-auto px-4'>
+                <div className='grid grid-cols-1 md:grid-cols-5 items-center justify-between pt-16 gap-4'>
+                    <div className='col-span-3'>
                         <div className='flex gap-3 items-center'>
                             <Image alt="Who's me" src={orangeDot} width={20} height={50} />
                             <span className=' text-base font-normal text-black_secondary'>I am Mearn-stack Web Developer</span>
                         </div>
                         <div className='flex flex-col gap-4 mt-3'>
-                            <h1 className='text-[84px] font-semibold text-black 
-                            leading-[1.1em]'>Creative Design <br /> and Web  <TypeAnimation
+                            <h1 className='md:text-5xl xl:text-[84px] font-semibold text-black 
+                            leading-[1.1em]'>Creative Design  & Web Development  <TypeAnimation
                                     sequence={[
-                                        'Design',
+                                        'Services',
                                         1000,
                                         'Solutions',
+                                        1000,
+                                        'Expertise',
                                         2000,
-
+                                        'Innovation',
+                                        3000,
+                                        'Excellence',
+                                        4000,
                                     ]}
                                     wrapper="span"
                                     className='text-primery inline-block'
@@ -33,9 +38,7 @@ const HomePageHero = () => {
                             <p className='font-normal text-base text-black_secondary mt-3'>
                                 I m Fardin Ahmed, a skilled MERN Stack Developer and WordPress Expert.
                                 With over 3 years of experience, I specialize in creating eCommerce sites, CMS solutions, and custom web development. I dedicate 12-14 hours a day to delivering high-quality, user-friendly websites for businesses and startups globally. Let’s create something amazing together! 🚀</p>
-                                <div className='mt-10'>
-
-                                {/* <HoverLink label='Download My CV' link='/'/> */}
+                                <div className='mt-8'>
                                 <ResumiDownload/>
                                 </div>
 
