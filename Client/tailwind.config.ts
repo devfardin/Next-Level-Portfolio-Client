@@ -30,6 +30,7 @@ export default {
         primery: "#FF8000",
         secondary: "#606060",
         black: '#101010',
+        border: '#ffe2d1',
         black_secondary: '#212529',
         white: '#FFFFFF',
         background: '#FFF5EF',

@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import HomePageHero from "./(home)/Hero";
 import About from "./(home)/About";
 import Service from "./(home)/service";
+import Experince from "./(home)/Experince";
 
 export const metadata: Metadata = {
   title: 'Fardin Ahmed | Web Developer & Digital Creator',
@@ -14,6 +15,7 @@ const HomePage = () => {
       <HomePageHero />
       <About/>
       <Service/>
+      <Experince/>
     </div>
   );
 };
