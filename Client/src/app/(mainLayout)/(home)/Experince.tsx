@@ -4,16 +4,100 @@ import Title from '@/components/shared/Title'
 import React from 'react'
 
 const Experince = () => {
+  const education = [
+    {
+      "degree": "BSc in Computer Science",
+      "university": "University of ULAV",
+      "year": "2018 - 2022",
+      "description": "Pomnis voluptas assumenda est, omnis dolor repellendus."
+    },
+    {
+      "degree": "BSc in Computer Science",
+      "university": "University of ULAV",
+      "year": "2018 - 2022",
+      "description": "Pomnis voluptas assumenda est, omnis dolor repellendus."
+    },
+    {
+      "degree": "Secondary School Education",
+      "university": "Kindergarten",
+      "year": "2006 - 2016",
+      "description": "Pomnis voluptas assumenda est, omnis dolor repellendus."
+    }
+  ]
   return (
-    <div className='bg-background_secondary py-14 mt-24'>
-        <Container>
+    <div className='bg-background py-14 mt-24'>
+      <Container>
         <div>
-            <div className='flex flex-col items-center justify-center'>
-            <SubTitle label='My Resume Fardin'/>
-            <Title label='10+ YEARS OF EXPERIENCE' align='text-center'/>
+          <div className='flex flex-col items-center justify-center'>
+            <SubTitle label='My Resume Fardin' />
+            <Title label='10+ YEARS OF EXPERIENCE' align='text-center' />
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-11 mt-7 relative">
+            {/* Left Sidebar (Full Height Line) */}
+            <div className="hidden lg:flex flex-col col-span-2 relative py-10">
+
+              {/* Vertical Line spanning full height */}
+              <div className="absolute left-2 top-0 bottom-0 w-[2px] bg-[#929292]">
+              </div>
+
+              {/* Education Items */}
+              <div className="relative flex items-center mt-10">
+                {/* Circle Indicator */}
+                <div className={`absolute -left-[0px] w-[18px] h-[18px] bg-primery rounded-full`}></div>
+                <h1 className="text-2xl font-medium text-black ml-8">Education</h1>
+              </div>
+
+              {/* Education Items */}
+              <div className="relative flex items-center mt-48">
+                {/* Circle Indicator */}
+                <div className={`absolute -left-[0px] w-[18px] h-[18px] bg-primery rounded-full`}></div>
+                <h1 className="text-2xl font-medium text-black ml-8">Software Skills</h1>
+              </div>
             </div>
+
+            <div className="col-span-6 lg:col-span-9 flex flex-col gap-8">
+
+              {/* Right Sidebar (Education List) */}
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-10 justify-between items-center bg-white rounded-md w-full p-8 shadow-sm hover:shadow transition-transform hover:scale-105">
+                {education?.map((item, index) => (
+                  <div key={index} >
+                    <div className="border-r border-neutral-300 last:border-r-0 flex flex-col gap-4">
+                      <div className="flex flex-col gap-2">
+                        <h1 className="text-[21px] font-medium text-black">{item.degree}</h1>
+                        <h3 className="text-base font-normal text-secondary">
+                          {item.university} <span>{item.year}</span>
+                        </h3>
+                      </div>
+                      <p className="text-base font-normal text-secondary">{item.description}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+
+              {/* Right Sidebar (Education List) */}
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-10 justify-between items-center bg-white rounded-md w-full p-8 shadow-sm hover:shadow transition-transform hover:scale-105">
+                {education?.map((item, index) => (
+                  <div key={index} >
+                    <div className="border-r border-neutral-300 last:border-r-0 flex flex-col gap-4">
+                      <div className="flex flex-col gap-2">
+                        <h1 className="text-[21px] font-medium text-black">{item.degree}</h1>
+                        <h3 className="text-base font-normal text-secondary">
+                          {item.university} <span>{item.year}</span>
+                        </h3>
+                      </div>
+                      <p className="text-base font-normal text-secondary">{item.description}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+
+            </div>
+
+
+          </div>
+
         </div>
-        </Container>      
+      </Container>
     </div>
   )
 }
