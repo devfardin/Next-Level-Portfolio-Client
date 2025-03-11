@@ -25,7 +25,7 @@ const Experince = () => {
     }
   ]
   return (
-    <div className='bg-background py-14 mt-24'>
+    <div className='bg-background py-14 mt-16 md:mt-24'>
       <Container>
         <div>
           <div className='flex flex-col items-center justify-center'>
@@ -47,55 +47,70 @@ const Experince = () => {
                 <h1 className="text-2xl font-medium text-black ml-8">Education</h1>
               </div>
 
-              {/* Education Items */}
+              {/* Software Skills Items */}
               <div className="relative flex items-center mt-48">
                 {/* Circle Indicator */}
                 <div className={`absolute -left-[0px] w-[18px] h-[18px] bg-primery rounded-full`}></div>
                 <h1 className="text-2xl font-medium text-black ml-8">Software Skills</h1>
               </div>
-            </div>
 
-            <div className="col-span-6 lg:col-span-9 flex flex-col gap-8">
+              {/* Experince Skills Items */}
+              <div className="relative flex items-center mt-48">
+                {/* Circle Indicator */}
+                <div className={`absolute -left-[0px] w-[18px] h-[18px] bg-primery rounded-full`}></div>
+                <h1 className="text-2xl font-medium text-black ml-8"> Experience </h1>
+              </div>
+
+            </div>
+            <div className="col-span-11 lg:col-span-9 flex flex-col gap-8">
 
               {/* Right Sidebar (Education List) */}
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-10 justify-between items-center bg-white rounded-md w-full p-8 shadow-sm hover:shadow transition-transform hover:scale-105">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-5 lg:gap-10 justify-between items-center bg-white rounded-md w-full px-8 py-10 shadow-sm hover:shadow">
                 {education?.map((item, index) => (
-                  <div key={index} >
-                    <div className="border-r border-neutral-300 last:border-r-0 flex flex-col gap-4">
-                      <div className="flex flex-col gap-2">
+                  <div key={index} className='border-0 md:border-r border-neutral-300 last:border-r-0 flex flex-col gap-2.5 lg:gap-4 md:pr-5 lg:pr-0'>
+                      <div className="flex flex-col gap-1.5 lf:gap-2">
                         <h1 className="text-[21px] font-medium text-black">{item.degree}</h1>
                         <h3 className="text-base font-normal text-secondary">
-                          {item.university} <span>{item.year}</span>
+                          {item.university} <span>({item.year})</span>
                         </h3>
                       </div>
                       <p className="text-base font-normal text-secondary">{item.description}</p>
                     </div>
-                  </div>
                 ))}
               </div>
 
-              {/* Right Sidebar (Education List) */}
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-10 justify-between items-center bg-white rounded-md w-full p-8 shadow-sm hover:shadow transition-transform hover:scale-105">
+              {/* Right Sidebar (Software Skills List) */}
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-5 lg:gap-10 justify-between items-center bg-white rounded-md w-full px-8 py-10 shadow-sm hover:shadow">
                 {education?.map((item, index) => (
-                  <div key={index} >
-                    <div className="border-r border-neutral-300 last:border-r-0 flex flex-col gap-4">
-                      <div className="flex flex-col gap-2">
+                  <div key={index} className='border-0 md:border-r border-neutral-300 last:border-r-0 flex flex-col gap-2.5 lg:gap-4 md:pr-5 lg:pr-0'>
+                      <div className="flex flex-col gap-1.5 lf:gap-2">
                         <h1 className="text-[21px] font-medium text-black">{item.degree}</h1>
                         <h3 className="text-base font-normal text-secondary">
-                          {item.university} <span>{item.year}</span>
+                          {item.university} <span>({item.year})</span>
                         </h3>
                       </div>
                       <p className="text-base font-normal text-secondary">{item.description}</p>
                     </div>
-                  </div>
+                ))}
+              </div>
+
+              {/* Right Sidebar (Experince Skills List) */}
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-5 lg:gap-10 justify-between items-center bg-white rounded-md w-full  px-8 py-10  shadow-sm hover:shadow">
+                {education?.map((item, index) => (
+                  <div key={index} className='border-0 md:border-r border-neutral-300 last:border-r-0 flex flex-col gap-2.5 lg:gap-4 md:pr-5 lg:pr-0'>
+                      <div className="flex flex-col gap-1.5 lf:gap-2">
+                        <h1 className="text-[21px] font-medium text-black">{item.degree}</h1>
+                        <h3 className="text-base font-normal text-secondary">
+                          {item.university} <span>({item.year})</span>
+                        </h3>
+                      </div>
+                      <p className="text-base font-normal text-secondary">{item.description}</p>
+                    </div>
                 ))}
               </div>
 
             </div>
-
-
           </div>
-
         </div>
       </Container>
     </div>

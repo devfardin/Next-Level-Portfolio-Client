@@ -12,7 +12,7 @@ const Service = async () => {
     const data = await response.json();
 
     return (
-        <div>
+        <div className='mt-16 md:mt-24'>
             <Container>
                 <div>
                     <div className='flex flex-col items-center justify-center'>

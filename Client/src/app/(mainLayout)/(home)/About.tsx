@@ -10,7 +10,7 @@ import ResumiDownload from './ResumiDownload'
 import AboutMe from '@/../../public/images/aboutMe.webp'
 const About = () => {
     return (
-        <div className='my-24'>
+        <div className='mt-16 md:mt-24'>
             <Container>
                 <div className='flex flex-col lg:flex-row gap-10'>
                     <div className='flex-1'>
