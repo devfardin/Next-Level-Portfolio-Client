@@ -29,10 +29,10 @@ const Experince = () => {
       <Container>
         <div>
           <div className='flex flex-col items-center justify-center'>
-            <SubTitle label='My Resume Fardin' />
+            <SubTitle label='My Resume'/>
             <Title label='10+ YEARS OF EXPERIENCE' align='text-center' />
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-11 mt-7 relative">
+          <div className="grid grid-cols-1 md:grid-cols-11 mt-10 relative">
             {/* Left Sidebar (Full Height Line) */}
             <div className="hidden lg:flex flex-col col-span-2 relative py-10">
 

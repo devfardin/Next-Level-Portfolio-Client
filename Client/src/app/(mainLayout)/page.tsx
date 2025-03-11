@@ -3,6 +3,7 @@ import HomePageHero from "./(home)/Hero";
 import About from "./(home)/About";
 import Service from "./(home)/service";
 import Experince from "./(home)/Experince";
+import ClientFeedback from "./(home)/ClientFeedback";
 
 export const metadata: Metadata = {
   title: 'Fardin Ahmed | Web Developer & Digital Creator',
@@ -16,6 +17,7 @@ const HomePage = () => {
       <About/>
       <Service/>
       <Experince/>
+      <ClientFeedback/>
     </div>
   );
 };
