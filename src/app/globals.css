@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Jost", serif;
+};
+
+/* Animations */
+
+@keyframes BgMove3D {
+  0% {
+    transform: translate3d(0px, 0px, 0px);
+}
+50% {
+    transform: translate3d(-30px, -30px, -30px);
+}
+100% {
+    transform: translate3d(0px, 0px, 0px);
+}
+}
+
+.bg-move-3d {
+  animation-name: BgMove3D;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
